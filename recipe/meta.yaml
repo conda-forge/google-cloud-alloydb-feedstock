@@ -1,5 +1,5 @@
 {% set name = "google-cloud-alloydb" %}
-{% set version = "0.4.3" %}
+{% set version = "0.4.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/google_cloud_alloydb-{{ version }}.tar.gz
-  sha256: 4302d4ca7b07971abb8988cd0310c80c5bf53a691eab753eea08ad3c9b4d0abd
+  sha256: cd5b19c02ab36bfea95baef8c750b4f44ce8c49efd51966cb0ba58eff1a7f501
 
 build:
   noarch: python
