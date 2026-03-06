@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: google-cloud-alloydb
-  version: 0.7.0
+  version: "0.8.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/google_cloud_alloydb-${{ version }}.tar.gz
-  sha256: 7a88371ee1e3804d8d85678f9eccc5eed8a4a071f67db9aa96ff1ad7b14e8e7e
+  sha256: a8e5fb108a94b0eeea0634706cb4ff335cce82b56d2f66cc86951b9ab8322a92
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
